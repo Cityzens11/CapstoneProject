@@ -1,0 +1,55 @@
+﻿@model CapstoneProject.DomainModels.ToDoEntry
+@if (TempData["DueDate"] != null){
+        <h5>@TempData["DueDate"]</h5>
+}
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        <h2>Edit Node: @Model.Name</h2>
+    </div>
+
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Name">Node Name</label>
+                <input type="text" class="form-control mb-3" asp-for="Name" placeholder="Enter Name">
+                <span asp-validation-for="Name" class=" alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Description">Description</label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class=" alert-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-3">
+                <label asp-for="DueDate">DueDate</label>
+                <input type="datetime-local" class="form-control" asp-for="DueDate">
+                <span asp-validation-for="DueDate" class=" alert-danger"></span>            
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label asp-for="Status">Status</label>
+                <select asp-for="Status" class="form-select" title="Default select example">
+                    <option value="@((int)CapstoneProject.Enum.ToDoEntryStatus.Completed)">Completed</option>
+                    <option value="@((int)CapstoneProject.Enum.ToDoEntryStatus.InProgress)">In Progress</option>
+                    <option value="@((int)CapstoneProject.Enum.ToDoEntryStatus.NotStarted)">Not Started</option>
+                </select>          
+            </div>
+        </div>
+        <input type="hidden" name="ToDoListId" value="@Model.ToDoListId" />
+
+        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-file-plus-fill"></i>Save</button>
+        <a asp-controller="ToDoEntry" asp-action="Index" asp-route-toDoListId="@Model.ToDoListId" class="btn btn-lg btn-warning p-2">Back To List</a>
+    </form>
+
+</div>
+
+@*//for front end validations*@
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

@@ -1,0 +1,12 @@
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\bin\Debug\net6.0\CapstoneProject-Domain-Entities.deps.json
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\bin\Debug\net6.0\CapstoneProject-Domain-Entities.dll
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\bin\Debug\net6.0\CapstoneProject-Domain-Entities.pdb
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.csproj.AssemblyReference.cache
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.AssemblyInfoInputs.cache
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.AssemblyInfo.cs
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.csproj.CoreCompileInputs.cache
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.dll
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\refint\CapstoneProject-Domain-Entities.dll
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\CapstoneProject-Domain-Entities.pdb
+C:\Users\Cityzen\OneDrive\Рабочий стол\С#\CapstoneProject\ToDo-Domain-Entities\obj\Debug\net6.0\ref\CapstoneProject-Domain-Entities.dll
