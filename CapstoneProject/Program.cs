@@ -9,6 +9,7 @@ namespace CapstoneProject
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //Add DataBase dependencies
             builder.Services.AddDbContext<CapStoneDbContext>(
                     options => options.UseSqlServer(
                     builder.Configuration.GetConnectionString("DefaultConnection")
@@ -34,6 +35,7 @@ namespace CapstoneProject
 
             app.UseAuthorization();
 
+            // Default routing address
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

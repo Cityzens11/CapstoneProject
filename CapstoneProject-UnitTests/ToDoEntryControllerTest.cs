@@ -1,7 +1,14 @@
 ﻿namespace CapstoneProject_UnitTests
 {
+    /// <summary>
+    /// Test of ToDoEntry controller.
+    /// </summary>
     public class ToDoEntryControllerTest
     {
+        /// <summary>
+        /// Test of Create action[HttpGet].
+        /// Create method should return viewresult with ToDoEntry Model
+        /// </summary>
         [Fact]
         public void CreateMethod_Should_Return_ToDoEntry()
         {
@@ -15,8 +22,11 @@
             Assert.IsType<ToDoEntry>(viewResult.Model);
         }
 
+        /// <summary>
+        /// Test of Create action[HttpPost] for invalid filled forms.
+        /// </summary>
         [Fact]
-        public async Task CreateMethod_Should_Return_InvalidModelState_For_Invalid_Data()
+        public async Task CreateMethod_Should_Return_ViewResult_For_Invalid_Data()
         {
             var temp = new ToDoEntryController(null);
             temp.ModelState.AddModelError("Name", "Error");
@@ -28,6 +38,10 @@
             Assert.False(temp.ModelState.IsValid);
         }
 
+        /// <summary>
+        /// Test of Create action[HttpPost] for invalid filled DueDate.
+        /// If DueDate is already passed than it is invalid.
+        /// </summary>
         [Fact]
         public async Task CreateMethod_Should_Return_ViewResult_For_Invalid_DueDate()
         {

@@ -4,6 +4,10 @@ using System.Diagnostics;
 
 namespace CapstoneProject.Controllers
 {
+    /// <summary>
+    /// Default Home Controller.
+    /// Simply Redirects to Index action of a ToDoList controller
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -3,6 +3,9 @@ using CapstoneProject.Enum;
 
 namespace CapstoneProject.DomainModels
 {
+    /// <summary>
+    /// A base class for ToDoEntry model.
+    /// </summary>
     public class ToDoEntry
     {
         public int Id { get; set; }

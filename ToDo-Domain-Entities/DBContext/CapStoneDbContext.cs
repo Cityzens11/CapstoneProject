@@ -16,6 +16,7 @@ namespace CapstoneProject.DBContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // One to Many relationship
             modelBuilder.Entity<ToDoEntry>()
                 .HasOne(p => p.ToDoList)
                 .WithMany(b => b.ToDoEntries)

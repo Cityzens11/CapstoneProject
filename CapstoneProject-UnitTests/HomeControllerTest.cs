@@ -1,7 +1,14 @@
 ﻿namespace CapstoneProject_UnitTests
 {
+    /// <summary>
+    /// Test of HomeController.
+    /// </summary>
     public class HomeControllerTest
     {
+        /// <summary>
+        /// Test of Index Method.
+        /// Index method should redirect to Index action of ToDoList controller.
+        /// </summary>
         [Fact]
         public void IndexMethod_Should_Return_The_Link_To_ToDoList_Index_Action()
         {
